@@ -460,29 +460,6 @@ feat: cria simulação de pagamento
 style: adiciona responsividade
 docs: atualiza README
 ```
-
----
-
-## 📋 Organização da tarefa
-
-**Quadro Trello:**
-
-```text
-COLE_AQUI_O_LINK_DO_TRELLO
-```
-
----
-
-## 🎥 Vídeo de apresentação
-
-**Vídeo da apresentação:**
-
-```text
-COLE_AQUI_O_LINK_DO_VIDEO
-```
-
-No vídeo será apresentada a execução do projeto, sua organização, funcionalidades implementadas e evolução durante o desenvolvimento.
-
 ---
 
 ## 🤖 Uso de Inteligência Artificial
