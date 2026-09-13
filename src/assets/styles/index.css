@@ -1,0 +1,176 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+h3 {
+  margin-top: 0;
+  color: #444;
+}
+
+/* =========================
+   ITENS DO CARRINHO
+========================= */
+
+.item-carrinho {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.item-carrinho p {
+  margin: 8px 0;
+}
+
+/* =========================
+   RESUMO DA COMPRA
+========================= */
+
+.resumo-compra {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  text-align: right;
+}
+
+.resumo-compra strong {
+  font-size: 22px;
+}
+
+/* =========================
+   BOTÕES E LINKS
+========================= */
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #222;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================
+   FORMULÁRIO DE PAGAMENTO
+========================= */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #555;
+}
+
+form p {
+  margin: 6px 0 0;
+  color: #c62828;
+  font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 600px) {
+  main {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .resumo-compra {
+    text-align: left;
+  }
+}
+/* =========================
+   SUCESSO E FALHA
+========================= */
+
+.tela-resultado {
+  text-align: center;
+}
+
+.tela-resultado p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.sucesso h1 {
+  color: #2e7d32;
+}
+
+.falha h1 {
+  color: #c62828;
+}
