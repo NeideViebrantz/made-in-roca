@@ -1,5 +1,7 @@
+
 /* =========================
-   CONFIGURAÇÕES GERAIS
+   MADE IN ROÇA
+   Tema Country
 ========================= */
 
 * {
@@ -8,169 +10,325 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-}
-
-main {
-  width: 90%;
-  max-width: 900px;
-  margin: 40px auto;
-  background-color: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #222;
-}
-
-h2 {
-  margin-top: 0;
-  color: #333;
-}
-
-h3 {
-  margin-top: 0;
-  color: #444;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #efe0c5;
+  color: #4a2816;
 }
 
 /* =========================
-   ITENS DO CARRINHO
+   CABEÇALHO / LOGO
 ========================= */
 
+.cabecalho {
+  min-height: 230px;
+  padding: 30px 6%;
+  background:
+    linear-gradient(rgba(70, 35, 15, 0.75), rgba(70, 35, 15, 0.85)),
+    #5a3018;
+  color: #f8e4bd;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  border-bottom: 8px solid #b7834d;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* LOGO */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  background: #d8ae70;
+  color: #4a2816;
+
+  padding: 18px 30px;
+  border-radius: 45px;
+
+  border: 5px solid #8a542c;
+  box-shadow:
+    0 5px 0 #4a2816,
+    0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.logo-chapeu {
+  font-size: 55px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 38px;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+
+.logo p {
+  margin: 5px 0 0;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* MENU */
+
+.cabecalho nav {
+  display: flex;
+  gap: 25px;
+}
+
+.cabecalho nav a {
+  color: #fff0d0;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.cabecalho nav a:hover {
+  border-bottom: 2px solid #e4b86d;
+  color: #e4b86d;
+}
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 35px;
+
+  background: #fff7e8;
+
+  border: 2px solid #c79a63;
+  border-radius: 15px;
+
+  box-shadow: 0 8px 25px rgba(74, 40, 22, 0.2);
+}
+
+.titulo-carrinho {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  background: #5a3018;
+  color: #f8e4bd;
+
+  padding: 18px 25px;
+
+  border-radius: 8px;
+
+  font-size: 30px;
+  letter-spacing: 2px;
+
+  box-shadow: 0 4px 0 #3d1f0e;
+}
+
+/* =========================
+   PRODUTOS
+========================= */
+
+.lista-produtos {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
 .item-carrinho {
-  background-color: #fafafa;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  background: #f5e4c7;
+
+  border: 2px solid #c99c62;
+  border-radius: 12px;
+
   padding: 20px;
-  margin-bottom: 15px;
+
+  box-shadow: 0 4px 10px rgba(74, 40, 22, 0.12);
+
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item-carrinho:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 7px 15px rgba(74, 40, 22, 0.2);
+}
+
+.item-carrinho h3 {
+  margin-top: 0;
+
+  font-size: 23px;
+  color: #5a3018;
 }
 
 .item-carrinho p {
   margin: 8px 0;
+  font-size: 17px;
 }
 
 /* =========================
-   RESUMO DA COMPRA
+   RESUMO
 ========================= */
 
 .resumo-compra {
-  margin-top: 25px;
-  padding: 20px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  text-align: right;
+  margin-top: 30px;
+
+  padding: 30px;
+
+  background: #d7ae72;
+
+  border: 6px solid #70401f;
+  border-radius: 12px;
+
+  box-shadow: inset 0 0 0 3px #e8c58e;
+}
+
+.resumo-compra h2 {
+  margin-top: 0;
+
+  text-align: center;
+
+  font-size: 27px;
+  text-transform: uppercase;
+}
+
+.resumo-compra p {
+  text-align: center;
+  font-size: 25px;
 }
 
 .resumo-compra strong {
-  font-size: 22px;
+  font-size: 30px;
 }
 
 /* =========================
-   BOTÕES E LINKS
+   BOTÃO
 ========================= */
 
-button {
-  width: 100%;
-  padding: 14px;
-  margin-top: 20px;
-  border: none;
+.botao-pagamento {
+  display: block;
+
+  margin: 25px auto 0;
+
+  max-width: 450px;
+
+  padding: 18px;
+
+  text-align: center;
+
+  background: #5a3018;
+  color: #fff0d0;
+
+  text-decoration: none;
+
   border-radius: 8px;
-  background-color: #222;
-  color: white;
-  font-size: 16px;
+
+  font-size: 19px;
   font-weight: bold;
-  cursor: pointer;
+  letter-spacing: 1px;
+
+  box-shadow: 0 5px 0 #351a0c;
+
+  transition: 0.2s;
 }
 
-button:hover {
-  opacity: 0.85;
-}
-
-button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
+.botao-pagamento:hover {
+  background: #754421;
+  transform: translateY(-2px);
 }
 
 /* =========================
-   FORMULÁRIO DE PAGAMENTO
+   RODAPÉ
 ========================= */
 
-form {
+.rodape {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   gap: 20px;
+
+  padding: 25px 6%;
+
+  background: #4a2816;
+  color: #f8e4bd;
+
+  border-top: 6px solid #b7834d;
 }
 
-form div {
-  display: flex;
-  flex-direction: column;
+.rodape div {
+  text-align: center;
+  font-size: 24px;
 }
 
-label {
-  margin-bottom: 7px;
-  font-weight: bold;
-}
-
-input {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 7px;
+.rodape strong {
+  display: block;
   font-size: 16px;
+  margin-top: 8px;
 }
 
-input:focus {
-  outline: none;
-  border-color: #555;
-}
-
-form p {
-  margin: 6px 0 0;
-  color: #c62828;
-  font-size: 14px;
+.rodape span {
+  display: block;
+  font-size: 13px;
+  margin-top: 5px;
 }
 
 /* =========================
-   RESPONSIVIDADE
+   RESPONSIVO
 ========================= */
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  .cabecalho {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    flex-direction: column;
+  }
+
+  .logo h1 {
+    font-size: 28px;
+  }
+
+  .cabecalho nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   main {
-    width: 95%;
-    margin: 20px auto;
+    margin: 20px;
     padding: 20px;
   }
 
-  h1 {
-    font-size: 26px;
-  }
-
-  .resumo-compra {
-    text-align: left;
+  .rodape {
+    flex-direction: column;
   }
 }
-/* =========================
-   SUCESSO E FALHA
-========================= */
 
-.tela-resultado {
-  text-align: center;
+@media (max-width: 500px) {
+  .logo {
+    padding: 15px;
+  }
+
+  .logo h1 {
+    font-size: 24px;
+  }
+
+  .titulo-carrinho {
+    font-size: 22px;
+  }
 }
 
-.tela-resultado p {
-  font-size: 18px;
-  margin: 20px 0;
+
+/* Tamanho da logo Made in Roça */
+.logo img {
+  width: 220px;
+  height: auto;
+  display: block;
 }
 
-.sucesso h1 {
-  color: #2e7d32;
-}
 
-.falha h1 {
-  color: #c62828;
-}
